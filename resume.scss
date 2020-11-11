@@ -22,8 +22,6 @@ body {
 
 %highlight {
   text-decoration: underline solid $soylent 2px;
-  border-radius: 4px;
-  vertical-align: center;
 }
 
 .page {
@@ -47,13 +45,13 @@ body {
 .contactHeader {
   @extend %highlight;
 
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: bold;
   color: $dark0;
 }
 
 .contactSubheader {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
   line-height: 1.15em;
   margin-left: 4px;
@@ -67,7 +65,7 @@ body {
 .sectionHeader {
   @extend %highlight;
 
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
   line-height: 1.15em;
   margin-bottom: 8px;
@@ -76,7 +74,6 @@ body {
 .sectionContent {
   margin-left: 16px;
   font-size: 0.9em;
-  line-height: 1.15em;
 }
 
 .subsection {
@@ -86,6 +83,7 @@ body {
 .subsectionHeader {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4px;
 
   .itemTitle {
     font-weight: bold;
@@ -102,6 +100,7 @@ body {
 
   .itemDate {
     color: $dark7;
+    min-width: 120px;
   }
 }
 
@@ -113,11 +112,16 @@ body {
   list-style-position: inside;
   display: flex;
   flex-direction: column;
+  line-height: 1.2em;
+
+  li {
+    display: flex;
+  }
 
   li:before {
-    content: "·";
+    /* content: "."; */
     vertical-align: middle;
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-right: 4px;
   }
 }
@@ -126,4 +130,8 @@ body {
   @extend .itemList;
   flex-wrap: wrap;
   max-height: 4em;
+}
+
+.withHonors {
+  font-style: italic;
 }

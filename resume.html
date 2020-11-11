@@ -15,14 +15,18 @@
     <div class="section">
       <h3 class="sectionHeader">Languages</h3>
       <div class="sectionContent">
-        <ul class="languageList">
-          <li>React — Redux, Redux-Saga</li>
-          <li>Javascript — TypeScript, Node.js</li>
-          <li>Python — Django</li>
-          <li>HTML/CSS — Sass, Less</li>
-          <li>C# — .NET MVC</li>
-          <li>SQL — PostgreSQL, Sql Server</li>
-        </ul>
+        <div class="subsection">
+          <div class="subsectionContent">
+            <ul class="languageList">
+              <li>React — Redux, Redux-Saga</li>
+              <li>Javascript — TypeScript, Node.js</li>
+              <li>HTML/CSS — Sass, Less</li>
+              <li>Python — Django</li>
+              <li>C# — .NET MVC</li>
+              <li>SQL — PostgreSQL, Sql Server</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section">
@@ -37,9 +41,10 @@
             <span class="itemDate">Mar '20 — now</span>
           </div>
           <div class="subsectionContent">
-            Left my job about a week before quarantine began with big plans,
-            many of which were disrupted. Studying Spanish, guitar, and
-            programming
+            <ul class="itemList">
+              <li>Planned work break, unplanned pandemic</li>
+              <li>Studying Spanish, guitar, programming</li>
+            </ul>
           </div>
         </div>
         <div class="subsection">
@@ -52,9 +57,20 @@
             <span class="itemDate">Jun '19 — Mar '20</span>
           </div>
           <div class="subsectionContent">
-            React, Node, Django, websockets to create web apps, tablet apps,
-            web⟷robot networking and whatever other needs arose for Cobalt’s
-            autonomous security bot
+            <ul class="itemList">
+              <li>
+                Developed tablet app in React, embedded on Cobalt's robot, with
+                no physical access to a tablet
+              </li>
+              <li>
+                Built and tested web apps for robot remote-control and data
+                reporting as half of a 2-person frontend team
+              </li>
+              <li>
+                Node, websockets, WebRTC to manage web-to-robot data/audio/video
+                streaming
+              </li>
+            </ul>
           </div>
         </div>
         <div class="subsection">
@@ -67,8 +83,17 @@
             <span class="itemDate">Jul '15 — Jun '19</span>
           </div>
           <div class="subsectionContent">
-            React and TypeScript to build customer-facing frontend web apps,
-            with occasional .NET programming on the backend
+            <ul class="itemList">
+              <li>
+                Contributed to Mindbody's B2B platform using agile methodology
+                as part of a scrum team
+              </li>
+              <li>
+                React, Typescript, .NET C# and VB to build customer-facing web
+                apps
+              </li>
+              <li>Adhered to TDD process in both frontend and backend</li>
+            </ul>
           </div>
         </div>
         <div class="subsection">
@@ -81,9 +106,17 @@
             <span class="itemDate">Jun '14 — Sep '14</span>
           </div>
           <div class="subsectionContent">
-            Owned a server benchmarking web app from initial reserach phase to
-            final demonstration wile working full-stack with API, frontend, and
-            UI design teams
+            <ul class="itemList">
+              <li>
+                Owned a full-stack multi-threaded server benchmarking web app
+                through SDLC
+              </li>
+              <li>
+                Collaborated with lead API engineer to design DB schema, and
+                with lead designer for UI/UX
+              </li>
+              <li>Angular, Django, XMLRPC, Siege benchmarking tool</li>
+            </ul>
           </div>
         </div>
         <div class="subsection">
@@ -96,9 +129,17 @@
             <span class="itemDate">Feb '13 — Dec '13</span>
           </div>
           <div class="subsectionContent">
-            Contracted with the Google Chrome Extensions team to design features
-            for and fix issues with the Chrome Extensions API doc server,
-            written in Python
+            <ul class="itemList">
+              <li>Contracted with Google Chrome Extensions team</li>
+              <li>
+                Worked with senior Google engineer to maintain Python webserver
+                running on App Engine
+              </li>
+              <li>
+                Automated reporting of feature availability across Chrome
+                releases
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -114,9 +155,14 @@
             <span class="itemDate">Sep '20 — now</span>
           </div>
           <div class="subsectionContent">
-            Embedded code to power a custom thermostat unit running on an ESP32
-            microcontroller, which also serves a web UI to manage the thermostat
-            schedule
+            <ul class="itemList">
+              <li>Building a custom thermostat system for my condo</li>
+              <li>
+                ESP32 chip running embedded Arduino C++ to operate thermostat
+                schedule
+              </li>
+              <li>Modern React web UI to view and change schedule</li>
+            </ul>
           </div>
         </div>
         <div class="subsection">
@@ -127,11 +173,15 @@
             <span class="itemDate">Aug '18 — now</span>
           </div>
           <div class="subsectionContent">
-            My own little treehouse on the world wide web! Node.js web app via
-            Express, served with Nginx, running on Ubuntu, hosted on a VPS
+            <ul class="itemList">
+              <li>My own little treehouse on the world wide web!</li>
+              <li>
+                Node.js web app via Express, served with Nginx, running on
+                Ubuntu, hosted on a Vultr VPS
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- TODO: probably remove Rubiniumite, work Mallet into Redbeacon job desc. -->
         <div class="subsection">
           <div class="subsectionHeader">
             <span>
@@ -140,22 +190,12 @@
             <span class="itemDate">Jan '15 — Jun '15</span>
           </div>
           <div class="subsectionContent">
-            Simultaneous turn-based strategy game, 3D WebGL graphics using
-            THREE.js, networked play against a remote player client or
-            server-controlled AI
-          </div>
-        </div>
-        <div class="subsection">
-          <div class="subsectionHeader">
-            <span>
-              <span class="itemTitle">Mallet</span>
-            </span>
-            <span class="itemDate">Jun '14 — Sep '14</span>
-          </div>
-          <div class="subsectionContent">
-            Web app for performance, availability, stress testing of API servers
-            with a frontend interface to manage tests and view results via calls
-            to a JSON API on the backend
+            <ul class="itemList">
+              <li>Led a team of four to build an online 3D game with WebGL</li>
+              <li>
+                Networked multiplayer using websockets, or single-player vs AI
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -172,7 +212,8 @@
             <span class="itemDate">Sep '11 — Jun '15</span>
           </div>
           <div class="subsectionContent">
-            B.S. in Computer Science, magna cum laude
+            B.S. in Computer Science,
+            <span class="withHonors">magna cum laude</span>
           </div>
         </div>
       </div>
