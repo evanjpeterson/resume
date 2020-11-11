@@ -111,6 +111,7 @@ body {
   .itemDate {
     color: $dark7;
     min-width: 120px;
+    font-size: 0.85em;
   }
 }
 
@@ -142,10 +143,9 @@ body {
   max-height: 4em;
 }
 
-.contactList {
-  @extend .itemList;
-  flex-wrap: wrap;
-  max-height: 4em;
+.languageRelated {
+  margin-left: 20px;
+  color: $dark7;
 }
 
 .withHonors {
