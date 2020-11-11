@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "0.0.0",
+  "description": "Evan's resume",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/evanjpeterson/resume.git"
+  },
+  "scripts": {
+    "sass": "./node_modules/sass/sass.js --watch ."
+  },
+  "dependencies": {
+    "reset.css": "^2.0.2",
+    "sass": "^1.29.0"
+  }
+}

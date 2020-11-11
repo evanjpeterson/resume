@@ -1,0 +1,116 @@
+$dark0: #222222;
+$dark1: #2a2a2a;
+$dark2: #323232;
+$dark3: #3a3a3a;
+$dark4: #424242;
+$dark5: #4a4a4a;
+$dark6: #525252;
+$dark7: #5a5a5a;
+
+body {
+  font-family: Helvetica, sans-serif;
+  margin-top: 0.5in;
+  color: $dark2;
+
+  @media print {
+    margin-top: 0;
+  }
+}
+
+.page {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0.5in;
+  width: 8.5in;
+  height: 11in;
+  background-color: white;
+  box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+
+  @media print {
+    box-shadow: none;
+  }
+}
+
+.contact {
+  margin-bottom: 16px;
+}
+
+.contactHeader {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: $dark0;
+}
+
+.contactSubheader {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.15em;
+  margin-left: 4px;
+  color: $dark1;
+}
+
+.section {
+  margin-bottom: 14px;
+}
+
+.sectionHeader {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.15em;
+  margin-bottom: 8px;
+}
+
+.sectionContent {
+  margin-left: 16px;
+  font-size: 0.9em;
+  line-height: 1.15em;
+}
+
+.subsection {
+  margin-bottom: 12px;
+}
+
+.subsectionHeader {
+  display: flex;
+  justify-content: space-between;
+
+  .itemTitle {
+    font-weight: bold;
+  }
+
+  .itemCompany {
+    font-style: italic;
+    color: $dark4;
+  }
+
+  .itemLocation {
+    color: $dark6;
+  }
+
+  .itemDate {
+    color: $dark7;
+  }
+}
+
+.subsectionContent {
+  margin-left: 16px;
+}
+
+.itemList {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+
+  li:before {
+    content: "·";
+    vertical-align: middle;
+    font-size: 1.6em;
+    margin-right: 4px;
+  }
+}
+
+.languageList {
+  @extend .itemList;
+  flex-wrap: wrap;
+  max-height: 4em;
+}
