@@ -6,6 +6,18 @@
     href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
   />
   <link rel="stylesheet" href="./resume.css" />
+  <style type="text/css" media="print">
+    @page {
+      /* 
+       * This adjusts the margin in the printer settings,
+       * so that extra data like date and URL are hidden when printing [to a PDF].
+       * 
+       * Stack Overflow:
+       * https://stackoverflow.com/questions/585254/how-to-remove-the-url-from-the-printing-page
+       */
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
   <div class="page">
