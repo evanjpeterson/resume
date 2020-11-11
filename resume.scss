@@ -48,6 +48,7 @@ body {
   font-size: 2em;
   font-weight: bold;
   color: $dark0;
+  margin-bottom: 8px;
 }
 
 .contactSubheader {
@@ -56,6 +57,15 @@ body {
   line-height: 1.15em;
   margin-left: 4px;
   color: $dark1;
+
+  i {
+    font-size: 0.8em;
+    min-width: 20px;
+
+    &.bigger {
+      font-size: 0.9em;
+    }
+  }
 }
 
 .section {
@@ -126,7 +136,13 @@ body {
   }
 }
 
-.languageList {
+.wrappedList {
+  @extend .itemList;
+  flex-wrap: wrap;
+  max-height: 4em;
+}
+
+.contactList {
   @extend .itemList;
   flex-wrap: wrap;
   max-height: 4em;

@@ -1,23 +1,61 @@
 <head>
   <title>Evan's Resumé</title>
   <link rel="stylesheet" href="./node_modules/reset.css/reset.css" />
+  <link
+    rel="stylesheet"
+    href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
+  />
   <link rel="stylesheet" href="./resume.css" />
 </head>
 <body>
   <div class="page">
     <div class="contact">
       <h1 class="contactHeader">Evan Peterson</h1>
-      <h2 class="contactSubheader"><span class="contactEmail"></span></h2>
-      <h2 class="contactSubheader">(760) 553-6325</h2>
-      <h2 class="contactSubheader">San Diego, CA</h2>
-      <!-- TODO: linkedin, github, website -->
+      <ul class="wrappedList">
+        <li>
+          <h2 class="contactSubheader">
+            <i class="fas fa-envelope"></i>
+            <span class="contactEmail"></span>
+          </h2>
+        </li>
+        <li>
+          <h2 class="contactSubheader">
+            <i class="fas fa-phone-alt"></i>
+            (760) 553-6325
+          </h2>
+        </li>
+        <li>
+          <h2 class="contactSubheader">
+            <i class="fas fa-location-arrow"></i>
+            San Diego, CA
+          </h2>
+        </li>
+        <li>
+          <h2 class="contactSubheader">
+            <i class="fas fa-globe bigger"></i>
+            evanjp.com
+          </h2>
+        </li>
+        <li>
+          <h2 class="contactSubheader">
+            <i class="fab fa-github bigger"></i>
+            github.com/evanjpeterson
+          </h2>
+        </li>
+        <li>
+          <h2 class="contactSubheader">
+            <i class="fab fa-linkedin-in bigger"></i>
+            linkedin.com/in/evanjpeterson
+          </h2>
+        </li>
+      </ul>
     </div>
     <div class="section">
       <h3 class="sectionHeader">Languages</h3>
       <div class="sectionContent">
         <div class="subsection">
           <div class="subsectionContent">
-            <ul class="languageList">
+            <ul class="wrappedList">
               <li>React — Redux, Redux-Saga</li>
               <li>Javascript — TypeScript, Node.js</li>
               <li>HTML/CSS — Sass, Less</li>
@@ -156,7 +194,7 @@
           </div>
           <div class="subsectionContent">
             <ul class="itemList">
-              <li>Building a custom thermostat system for my condo</li>
+              <li>Building a custom thermostat system for my apartment</li>
               <li>
                 ESP32 chip running embedded Arduino C++ to operate thermostat
                 schedule
