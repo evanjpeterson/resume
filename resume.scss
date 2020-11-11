@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $dark0: #222222;
 $dark1: #2a2a2a;
 $dark2: #323232;
@@ -6,6 +8,7 @@ $dark4: #424242;
 $dark5: #4a4a4a;
 $dark6: #525252;
 $dark7: #5a5a5a;
+$soylent: color.adjust(#409040, $alpha: -0.6);
 
 body {
   font-family: Helvetica, sans-serif;
@@ -15,6 +18,12 @@ body {
   @media print {
     margin-top: 0;
   }
+}
+
+%highlight {
+  text-decoration: underline solid $soylent 2px;
+  border-radius: 4px;
+  vertical-align: center;
 }
 
 .page {
@@ -36,6 +45,8 @@ body {
 }
 
 .contactHeader {
+  @extend %highlight;
+
   font-size: 2.2em;
   font-weight: bold;
   color: $dark0;
@@ -54,6 +65,8 @@ body {
 }
 
 .sectionHeader {
+  @extend %highlight;
+
   font-size: 1.2em;
   font-weight: bold;
   line-height: 1.15em;
