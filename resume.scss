@@ -152,6 +152,12 @@ body {
   max-height: 4em;
 }
 
+.wrappedList4 {
+  @extend .itemList;
+  flex-wrap: wrap;
+  max-height: 6em;
+}
+
 .languageRelated {
   margin-left: 20px;
   color: $dark7;
@@ -166,11 +172,20 @@ body {
   .contact {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
 
-    .contactHeader,
-    .wrappedList {
-      // Push everything down so the steam may rise.
+    .contactHeader {
+      // Push the header down so the steam may rise.
       margin-top: 4px;
+    }
+
+    .headerDetails {
+      margin-top: 10px;
+    }
+
+    .headerPhoto img {
+      border-radius: 50%;
+      width: 140px;
     }
   }
 
