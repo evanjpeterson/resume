@@ -51,6 +51,15 @@ body {
   margin-bottom: 8px;
 }
 
+.contactHeaderWithIcon {
+  display: flex;
+
+  i {
+    margin-left: 8px;
+    font-size: 1.8em;
+  }
+}
+
 .contactSubheader {
   font-size: 1.1em;
   font-weight: bold;
@@ -148,6 +157,24 @@ body {
   color: $dark7;
 }
 
-.withHonors {
+.withHonors,
+.italic {
   font-style: italic;
+}
+
+.cafe {
+  .contact {
+    display: flex;
+    justify-content: space-between;
+
+    .contactHeader,
+    .wrappedList {
+      // Push everything down so the steam may rise.
+      margin-top: 4px;
+    }
+  }
+
+  .section {
+    margin-bottom: 32px;
+  }
 }

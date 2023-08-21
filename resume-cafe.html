@@ -1,5 +1,5 @@
 <head>
-  <title>Evan's Resume</title>
+  <title>Evan's Cafe Resume</title>
   <link rel="stylesheet" href="./node_modules/reset.css/reset.css" />
   <link
     rel="stylesheet"
@@ -20,16 +20,15 @@
   </style>
 </head>
 <body>
-  <main class="page">
+  <main class="page cafe">
     <header class="contact">
-      <h1 class="contactHeader">Evan Peterson</h1>
+      <div class="contactHeaderWithIcon">
+        <h1 class="contactHeader">
+          Evan Peterson
+        </h1>
+        <i class="fas fa-mug-hot"></i>
+      </div>
       <ul class="wrappedList">
-        <li>
-          <h2 class="contactSubheader">
-            <i class="fas fa-envelope"></i>
-            <span class="contactEmail"></span>
-          </h2>
-        </li>
         <li>
           <h2 class="contactSubheader">
             <i class="fas fa-phone-alt"></i>
@@ -38,8 +37,8 @@
         </li>
         <li>
           <h2 class="contactSubheader">
-            <i class="fas fa-location-arrow"></i>
-            San Diego, CA
+            <i class="fas fa-envelope"></i>
+            <span class="contactEmail"></span>
           </h2>
         </li>
         <li>
@@ -48,41 +47,19 @@
             evanjp.com
           </h2>
         </li>
-        <li>
-          <h2 class="contactSubheader">
-            <i class="fab fa-github bigger"></i>
-            github.com/evanjpeterson
-          </h2>
-        </li>
-        <li>
-          <h2 class="contactSubheader">
-            <i class="fab fa-linkedin-in bigger"></i>
-            linkedin.com/in/evanjpeterson
-          </h2>
-        </li>
       </ul>
     </header>
     <section class="section">
-      <h3 class="sectionHeader">Languages</h3>
+      <h3 class="sectionHeader">About Me</h3>
       <div class="sectionContent">
         <section class="subsection">
           <div class="subsectionContent">
-            <ul class="wrappedList">
+            <ul class="itemList">
               <li>
-                React
-                <span class="languageRelated"
-                  >React Native, Redux, Redux-Saga</span
-                >
+                Seeking hands-on experience in the coffee business, with the goal of one day opening a café.
               </li>
               <li>
-                JavaScript
-                <span class="languageRelated">TypeScript, Node.js</span>
-              </li>
-              <li>HTML/CSS <span class="languageRelated">Sass, Less</span></li>
-              <li>Python <span class="languageRelated">Django</span></li>
-              <li>C# <span class="languageRelated">.NET MVC</span></li>
-              <li>
-                SQL <span class="languageRelated">PostgreSQL, SQL Server</span>
+                Previous work as a software engineer has required me to pick up new technologies and processes quickly, switch tasks frequently, and coordinate with small teams of bright, motivated people.
               </li>
             </ul>
           </div>
@@ -90,7 +67,7 @@
       </div>
     </section>
     <section class="section">
-      <h3 class="sectionHeader">Experience</h3>
+      <h3 class="sectionHeader">Work History</h3>
       <div class="sectionContent">
         <section class="subsection">
           <header class="subsectionHeader">
@@ -104,22 +81,9 @@
           <div class="subsectionContent">
             <ul class="itemList">
               <li>
-                Technical lead for 6-week feature sprints with teams of 2-4
-                engineers
+                Construction mobile and web apps for jobsite crew and office staff
               </li>
-              <li>SME for TS, JS, React, and general frontend tech</li>
-              <li>
-                Shipped several features for React Native app, including Offline
-                Mode
-              </li>
-              <li>
-                Performance optimizations with Django ORM queries and mobile
-                data-loading strategy
-              </li>
-              <li>
-                LaunchDarkly feature flag integrations in Django, React, and RN
-                apps
-              </li>
+              <li>Led small teams of engineers through 6-week project sprints</li>
             </ul>
           </div>
         </section>
@@ -153,16 +117,10 @@
           <div class="subsectionContent">
             <ul class="itemList">
               <li>
-                Developed tablet app in React, embedded on Cobalt's robot,
-                without physical access to a tablet
+                Software for autonomous, optionally remote-controlled security robots
               </li>
               <li>
-                Built and tested web apps for robot remote-control and data
-                reporting as half of a 2-person frontend team
-              </li>
-              <li>
-                Node, websockets, WebRTC to manage web-to-robot data/audio/video
-                streaming
+                Night shifts with robot operators, listening to their concerns so I could add features to help them
               </li>
             </ul>
           </div>
@@ -179,14 +137,9 @@
           <div class="subsectionContent">
             <ul class="itemList">
               <li>
-                Contributed to Mindbody's B2B platform using agile methodology
-                as part of a scrum team
+                Point-of-sale and business management software for yoga studios and salons
               </li>
-              <li>
-                React, Typescript, .NET C# and VB to build both customer-facing
-                and internal web apps
-              </li>
-              <li>Adhered to TDD process in both frontend and backend</li>
+              <li>Played guitar gigs in bars around town in my free time</li>
             </ul>
           </div>
         </section>
@@ -202,55 +155,10 @@
           <div class="subsectionContent">
             <ul class="itemList">
               <li>
-                Owned a full-stack multi-threaded server benchmarking web app
-                through SDLC
+                Created software to intentionally overload the company's servers 
               </li>
               <li>
-                Collaborated with lead API engineer to design DB schema and with
-                lead designer for UI/UX
-              </li>
-              <li>
-                Angular, Django, REST API, XMLRPC, Siege benchmarking tool to
-                plan and run performance tests
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </section>
-    <section class="section">
-      <h3 class="sectionHeader">Projects</h3>
-      <div class="sectionContent">
-        <section class="subsection">
-          <header class="subsectionHeader">
-            <span>
-              <span class="itemTitle">Personal Website</span>
-            </span>
-            <span class="itemDate">Aug '18 — now</span>
-          </header>
-          <div class="subsectionContent">
-            <ul class="itemList">
-              <li>My own little treehouse on the world wide web!</li>
-              <li>
-                Node.js web app via Express, served with Nginx, running on
-                Ubuntu, hosted on a Vultr VPS
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="subsection">
-          <header class="subsectionHeader">
-            <span>
-              <span class="itemTitle">Rubiniumite</span>
-            </span>
-            <span class="itemDate">Jan '15 — Jun '15</span>
-          </header>
-          <div class="subsectionContent">
-            <ul class="itemList">
-              <li>Led a team of four to build an online 3D game with WebGL</li>
-              <li>
-                Networked multiplayer using Node.js server and websockets, or
-                single-player vs. AI
+                Importantly, Vinay taught me how to use the espresso machine
               </li>
             </ul>
           </div>
@@ -269,8 +177,22 @@
             <span class="itemDate">Sep '11 — Jun '15</span>
           </header>
           <div class="subsectionContent">
-            B.S. in Computer Science,
-            <span class="withHonors">magna cum laude</span>
+            B.S. in Computer Science
+          </div>
+        </section>
+        <section class="subsection">
+          <header class="subsectionHeader">
+            <span class="itemTitle">Favorite Coursework</span>
+          </header>
+          <div class="subsectionContent">
+            <ul class="wrappedList">
+              <li>Botany</li>
+              <li>Social Psychology</li>
+              <li>Guitar</li>
+              <li>Film Studies</li>
+              <li>Music Appreciation</li>
+              <li>Game Development</li>
+            </ul>
           </div>
         </section>
       </div>
